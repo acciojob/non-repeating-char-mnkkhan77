@@ -1,12 +1,9 @@
 function firstNonRepeatedChar(str) {
  // Write your code here
-    for (let idx = 0; idx < s.length; idx++){
-        if(s.indexOf(s[idx]) === s.lastIndexOf(s[idx])){
-            return idx
-        } else {
-            return -1
-        }
-    }
-}
+    var firstUniqChar = function(s) {
+    for(i=0; i<s.length; i++)
+        if(s.indexOf(s[i])===s.lastIndexOf(s[i])) return i
+    return -1
+};
 const input = prompt("Enter a string");
 alert(firstNonRepeatedChar(input)); 
