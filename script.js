@@ -1,9 +1,8 @@
-function firstNonRepeatedChar(str) {
+function firstNonRepeatedChar(s) {
  // Write your code here
-    var firstUniqChar = function(s) {
     for(i=0; i<s.length; i++)
-        if(s.indexOf(s[i])===s.lastIndexOf(s[i])) return i
+        if(s.indexOf(s[i])===s.lastIndexOf(s[i])) return s[i]
     return -1
 };
 const input = prompt("Enter a string");
-alert(firstNonRepeatedChar(input)); 
+alert(firstNonRepeatedChar(input));
